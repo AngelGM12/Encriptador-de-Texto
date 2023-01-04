@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.encryptor{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+}
+.important-logo{
+    width: 16px;
+}
