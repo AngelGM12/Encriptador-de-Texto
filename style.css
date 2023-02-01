@@ -80,10 +80,10 @@ button:nth-child(2){
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    padding: 20px 0 20px 0;
+    /*padding: 20px 0 20px 0;*/
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: white;
     
@@ -92,6 +92,26 @@ button:nth-child(2){
     width: 260px;
     height: 430px;
 }
+.no-message{
+    color: #343A40;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.insert-text{
+    color: #343A40;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Monserrat', sans-serif;
+}
+#avatar{
+    width: 100%;
+}
+.copy{
+    margin-bottom: 0px;
+    margin-top: 110px;
+}
 
 .logo{
     width: 120px;
@@ -99,6 +119,7 @@ button:nth-child(2){
 }
 .important-logo{
     width: 18px;
+    height: 18px;
 }
 
 @media  screen and (max-width: 920px){
@@ -106,6 +127,7 @@ button:nth-child(2){
         flex-direction: column;
         width: 100%;
         justify-content: space-around;
+
     }
     .buttons{
         width: 100%;
@@ -119,13 +141,28 @@ button:nth-child(2){
     }
     
     .decrypted{
+        
+        
+        
         align-self: center;
         width: 80%;
-        min-height: 200px;
+        
         
     }
+    .no-message{
+        
+        padding: 50px 20px 0 20px;
+        text-align: center;
+    }
     .decrypted > button {
-        height: 150px;
+       margin-bottom: 20px;
+    }
+    #encryptor-textarea{
+        width: 400px;
+        
+    }
+    #avatar{
+        display: none;
     }
 
 }
