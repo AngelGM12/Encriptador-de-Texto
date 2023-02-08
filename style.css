@@ -1,6 +1,4 @@
-section{
-    
-}
+
 body{
     background-color: #F3F5FC;
     display: flex;
@@ -101,7 +99,7 @@ button:nth-child(2){
 .decryptor-textarea{
     width: 260px;
     height: 350px;
-    background-image: url("/resources/avatar.png");
+    background-image: url("./resources/avatar.png");
     background-repeat: no-repeat;
 }
 .decryptor-textarea:focus{
