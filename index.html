@@ -16,7 +16,7 @@
     <main>
         <section class="encryptor">
             <img class="logo" src="resources/logo.png" alt="Alura Logo">
-            <textarea name="" id="encryptor-textarea" cols="30" rows="10">Enter text here ... </textarea>
+            <textarea class="encryptor-textarea" name="" id="" cols="30" rows="10" placeholder="Enter Text Here..."></textarea>
             <div class="button-and-span">
                 <div class="span-warning">
                     <img class="important-logo " src="resources/important.png" alt="">
@@ -24,8 +24,8 @@
                 </div>
                 
                 <div class="buttons">
-                    <button>Encrypt</button>
-                    <button>Decrypt</button>
+                    <button onclick="btnEncriptar()">Encrypt</button>
+                    <button onclick="btnDesencriptar()">Decrypt</button>
                 </div>
             </div>
 
@@ -34,13 +34,13 @@
         </section>
 
         <section class="decrypted">
-            <!--<textarea name="" id="decryptor-textarea" cols="30" rows="10"></textarea>-->
-            <img id="avatar" src="/resources/avatar.png" alt="Avatar-Logo">
+            <textarea class="decryptor-textarea" name="" id="" cols="30" rows="10"></textarea>
+            <!--<img id="avatar" src="/resources/avatar.png" alt="Avatar-Logo">-->
             <span class="no-message">No message has been found</span>
             <span class="insert-text">Insert text you wish to Encrypt or Decrypt</span>
-            <button class="copy">Copy</button>
+            <button class="copy" onclick="btnCopiar()">Copy</button>
         </section>
     </main>
-    
+    <script src="/script.js"></script>
 </body>
 </html>

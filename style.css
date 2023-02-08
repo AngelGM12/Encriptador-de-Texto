@@ -28,7 +28,7 @@ main{
     justify-content: space-between;
     height: auto;
 }
-#encryptor-textarea{
+.encryptor-textarea{
     width: 600px;
     height: 300px;
     max-width: 600px;
@@ -36,8 +36,17 @@ main{
     align-self: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    border: none;
+    text-transform: lowercase;
     
 }
+.encryptor-textarea:focus{
+    outline: none;
+}
+::placeholder{
+    color: #0A3871;
+}
+
 textarea{
     background: transparent;
     border: none;
@@ -86,11 +95,17 @@ button:nth-child(2){
     /*padding: 20px 0 20px 0;*/
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: white;
+
     
 }
-#decryptor-textarea{
+.decryptor-textarea{
     width: 260px;
-    height: 430px;
+    height: 350px;
+    background-image: url("/resources/avatar.png");
+    background-repeat: no-repeat;
+}
+.decryptor-textarea:focus{
+    outline: none;
 }
 .no-message{
     color: #343A40;
